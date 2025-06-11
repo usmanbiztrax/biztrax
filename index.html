@@ -28,8 +28,33 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
-        .hero-background {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/4F46E5/ffffff?text=Biztrax+Hero+Image') center/cover no-repeat;
+        /* Removed .hero-background background image */
+        .hero-section {
+            position: relative;
+            overflow: hidden; /* Ensures video stays within bounds */
+            min-height: 500px; /* Minimum height for the hero section */
+        }
+        .video-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            /* Scale the video to cover the container while maintaining aspect ratio */
+            object-fit: cover;
+        }
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+            z-index: 0;
         }
         /* Simple fadeIn animation for sections */
         .fade-in-section {
@@ -73,9 +98,22 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-background text-white py-24 md:py-32 flex items-center justify-center">
-        <div class="container mx-auto px-4 text-center">
+    <!-- Hero Section with Video Background -->
+    <section class="hero-section text-white py-24 md:py-32 flex items-center justify-center">
+        <!-- YouTube Video Background -->
+        <iframe
+            class="video-background"
+            src="https://www.youtube.com/embed/W1edz5yMNo4?autoplay=1&mute=1&controls=0&loop=1&playlist=W1edz5yMNo4&modestbranding=1&iv_load_policy=3&disablekb=1"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="Biztrax UK Background Video">
+        </iframe>
+        <!-- Overlay for readability -->
+        <div class="video-overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="container mx-auto px-4 text-center relative z-10">
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
                 Unlock Your Business's Full Potential
             </h1>
