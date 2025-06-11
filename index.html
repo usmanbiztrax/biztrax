@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biztrax UK | Your Partner for Business Growth & Efficiency</title>
+    <meta name="description" content="Biztrax UK offers comprehensive business solutions including financial management, strategic consulting, and digital transformation services to drive your business growth and efficiency.">
+    <meta name="keywords" content="Biztrax UK, business solutions, financial management, strategic consulting, digital transformation, business growth, efficiency, UK business, small business solutions, enterprise solutions">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .hero-background {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/4F46E5/ffffff?text=Biztrax+Hero+Image') center/cover no-repeat;
+        }
+        /* Simple fadeIn animation for sections */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-3xl font-bold text-indigo-700">Biztrax<span class="text-gray-900">UK</span></a>
+
+            <!-- Navigation Links (Hidden on small screens, shown with JS toggle) -->
+            <nav id="mobile-menu" class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-lg font-medium">
+                <a href="#services" class="text-gray-700 hover:text-indigo-600 transition duration-300">Services</a>
+                <a href="#about" class="text-gray-700 hover:text-indigo-600 transition duration-300">About Us</a>
+                <a href="#solutions" class="text-gray-700 hover:text-indigo-600 transition duration-300">Solutions</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-indigo-600 transition duration-300">Testimonials</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition duration-300">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-background text-white py-24 md:py-32 flex items-center justify-center">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Unlock Your Business's Full Potential
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10">
+                Biztrax UK provides innovative business solutions to streamline operations, optimize financial performance, and drive sustainable growth.
+            </p>
+            <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Get Started Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white fade-in-section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Our Core Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Financial Management -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 card-hover border border-gray-100">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Financial Management</h3>
+                    <p class="text-gray-600 text-center">
+                        From meticulous bookkeeping to comprehensive financial reporting and analysis, we ensure your finances are optimized for maximum profitability.
+                    </p>
+                </div>
+
+                <!-- Service 2: Strategic Consulting -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 card-hover border border-gray-100">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9.25 17C6.885 17 5 15.115 5 12.75V7.25C5 4.885 6.885 3 9.25 3H14.75C17.115 3 19 4.885 19 7.25V12.75C19 15.115 17.115 17 14.75 17H14.25M12 21H12.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Strategic Consulting</h3>
+                    <p class="text-gray-600 text-center">
+                        Develop clear business strategies, identify growth opportunities, and navigate complex challenges with our expert guidance.
+                    </p>
+                </div>
+
+                <!-- Service 3: Digital Transformation -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 card-hover border border-gray-100">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Digital Transformation</h3>
+                    <p class="text-gray-600 text-center">
+                        Leverage cutting-edge technology and optimize your digital presence to enhance efficiency and reach new markets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-100 fade-in-section">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <img src="https://placehold.co/600x400/9CA3AF/ffffff?text=About+Us" alt="About Biztrax UK" class="rounded-lg shadow-xl w-full h-auto object-cover">
+            </div>
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">About Biztrax UK</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    At Biztrax UK, we are passionate about helping businesses like yours thrive in a competitive landscape. With years of experience and a team of dedicated experts, we provide tailored solutions that address your unique challenges and opportunities. Our mission is to empower you with the tools and insights needed for sustainable success.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    We believe in building long-term partnerships, focusing on transparent communication, and delivering measurable results. Your success is our success.
+                </p>
+                <a href="#contact" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions / Why Choose Us Section -->
+    <section id="solutions" class="py-16 md:py-24 bg-white fade-in-section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Why Choose Biztrax UK?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md border border-gray-100 flex items-start space-x-6">
+                    <div class="text-indigo-600 flex-shrink-0">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002.923 12c0 3.072 1.25 5.861 3.24 7.957A12.006 12.006 0 0012 22c4.238 0 7.968-2.617 9.243-6.243"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Expert Team</h3>
+                        <p class="text-gray-600">Our highly skilled professionals bring years of industry experience and a deep understanding of business challenges.</p>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md border border-gray-100 flex items-start space-x-6">
+                    <div class="text-indigo-600 flex-shrink-0">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Tailored Solutions</h3>
+                        <p class="text-gray-600">We don't believe in one-size-fits-all. Our solutions are customized to meet your specific business needs.</p>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md border border-gray-100 flex items-start space-x-6">
+                    <div class="text-indigo-600 flex-shrink-0">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v-1m4 4v-1m4-4v-1M3 21h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v11a2 2 0 002 2zm0 0h18v-2a2 2 0 00-2-2H3a2 2 0 00-2 2v2zm0 0V5.723C1.242 4.417 2.309 3.012 3.497 3.012h17.006c1.188 0 2.255 1.405 1.5 2.711"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="2xl:text-2xl font-semibold text-gray-900 mb-2">Results-Driven</h3>
+                        <p class="text-gray-600">Our focus is on delivering tangible results that positively impact your bottom line and overall business performance.</p>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md border border-gray-100 flex items-start space-x-6">
+                    <div class="text-indigo-600 flex-shrink-0">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.592 1M12 8V7m0 1v8m0 4v1m0-11c-1.11 0-2.08-.402-2.592-1M12 8h-1.06"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Cost-Effective</h3>
+                        <p class="text-gray-600">We offer competitive pricing models without compromising on the quality and effectiveness of our services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-100 fade-in-section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+                    <p class="text-lg text-gray-700 italic mb-6">
+                        "Biztrax UK transformed our financial processes, making them more efficient and transparent. Their team is incredibly knowledgeable and supportive. Highly recommend!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/A78BFA/ffffff?text=C1" alt="Client 1" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-900">Jane Doe</p>
+                            <p class="text-sm text-gray-600">CEO, Tech Innovations Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+                    <p class="text-lg text-gray-700 italic mb-6">
+                        "The strategic consulting from Biztrax UK helped us identify key growth areas and develop a clear roadmap. Their insights were invaluable for our expansion."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/FCD34D/ffffff?text=C2" alt="Client 2" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-900">John Smith</p>
+                            <p class="text-sm text-gray-600">Founder, Global Ventures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 md:py-24 bg-indigo-700 text-white fade-in-section">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Grow Your Business?</h2>
+            <p class="text-xl max-w-2xl mx-auto mb-10">
+                Contact Biztrax UK today for a free consultation and discover how we can help you achieve your business objectives.
+            </p>
+            <a href="#contact" class="bg-white hover:bg-gray-100 text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Contact Us Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white fade-in-section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Get in Touch</h2>
+            <div class="max-w-xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg border border-gray-100">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-lg font-medium text-gray-700 mb-2">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border-gray-300 focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 transition duration-200" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-medium text-gray-700 mb-2">Your Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border-gray-300 focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 transition duration-200" placeholder="your.email@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-lg font-medium text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" class="w-full px-4 py-3 rounded-lg border-gray-300 focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 resize-y transition duration-200" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+                <div id="form-message" class="mt-4 text-center text-sm font-medium hidden"></div>
+            </div>
+            <div class="text-center mt-12 text-gray-700">
+                <p class="text-lg">Prefer to call? Reach us at: <a href="tel:+441234567890" class="text-indigo-600 hover:underline">+44 1234 567890</a></p>
+                <p class="text-lg mt-2">Or email us directly: <a href="mailto:info@biztrax.uk" class="text-indigo-600 hover:underline">info@biztrax.uk</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Biztrax UK</h4>
+                    <p class="text-sm">Empowering businesses through innovative solutions and strategic partnerships.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#services" class="hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#about" class="hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition duration-300">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-white transition duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.493 2.193a.75.75 0 00-.986 0L2.753 7.822a1.75 1.75 0 00-.753 1.432V19.25a1.75 1.75 0 001.75 1.75h14.5a1.75 1.75 0 001.75-1.75V9.254a1.75 1.75 0 00-.753-1.432l-8.754-5.629zM12 4.15l7.07 4.537-7.07 4.538-7.07-4.538L12 4.15zM4.5 19.25V9.992l7.07 4.538a.75.75 0 00.98 0l7.07-4.538v9.258h-15.14z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M.052 1.543A.75.75 0 01.782 1.5h22.436a.75.75 0 01.73 1.043l-4.5 19.5a.75.75 0 01-1.46.06L12 18.25l-6.508 4.293a.75.75 0 01-1.46-.06L.052 2.543zM4.75 16.48l5.5-3.628L12 15.696l1.75-1.155 5.5 3.628L20.25 4.5H3.75L4.75 16.48z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-sm">
+                &copy; <span id="current-year"></span> Biztrax UK. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenu.classList.toggle('flex-col');
+                mobileMenu.classList.add('absolute', 'top-full', 'left-0', 'w-full', 'bg-white', 'shadow-lg', 'py-4', 'px-4', 'md:relative', 'md:flex', 'md:flex-row');
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('flex', 'flex-col');
+                        mobileMenu.classList.remove('absolute', 'top-full', 'left-0', 'w-full', 'bg-white', 'shadow-lg', 'py-4', 'px-4');
+                    }
+                });
+            });
+        }
+
+
+        // Intersection Observer for fade-in effect
+        const fadeInSections = document.querySelectorAll('.fade-in-section');
+
+        const observerOptions = {
+            root: null, /* viewport */
+            rootMargin: '0px',
+            threshold: 0.1 /* 10% of element visible */
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Stop observing once it's visible
+                }
+            });
+        }, observerOptions);
+
+        fadeInSections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Handle contact form submission
+        const contactForm = document.querySelector('#contact form');
+        const formMessage = document.getElementById('form-message');
+
+        if (contactForm && formMessage) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+
+                // Simulate form submission
+                formMessage.classList.remove('hidden');
+                formMessage.classList.remove('text-red-500');
+                formMessage.classList.add('text-green-600');
+                formMessage.textContent = 'Thank you for your message! We will get back to you shortly.';
+
+                // Optionally, clear the form fields
+                contactForm.reset();
+
+                // Hide message after a few seconds
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 5000);
+            });
+        }
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
